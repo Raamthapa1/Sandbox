@@ -1,6 +1,7 @@
 """
 CP1404/CP5632 - Practical
 Password checker "skeleton" code to help you get started
+Ram Thapa
 """
 
 MIN_LENGTH = 2

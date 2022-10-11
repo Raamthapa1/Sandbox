@@ -19,5 +19,5 @@ while color_name != "":
     else:
         print("Invalid color name")
     color_name = input("Please enter the color name to convert to code: ").title()
-print("Bye. ")
+print("Bye.. ")
 

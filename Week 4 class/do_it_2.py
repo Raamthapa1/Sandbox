@@ -16,7 +16,7 @@ list_of_numbers = []
 
 
 def get_numbers():
-    number = input("Please input numbers"))
+    number = input("Please input numbers")
     list_of_numbers.append(number)
     while number != "":
         number = (input("Please input numbers"))

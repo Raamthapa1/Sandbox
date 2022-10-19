@@ -1,4 +1,5 @@
 def main():
+    """creates ductionary, fills it with proper key and value and prints result"""
     email_and_name = {}  # empty dictionary for emails and names
     email = input("Email: ")
     while email != "":

@@ -14,7 +14,13 @@ def main():
             count_of_champions[detail[CHAMPION_INDEX]] += 1
         except KeyError:
             count_of_champions[detail[CHAMPION_INDEX]] = 1
-    print(count_of_champions, win_countries)
+
+
+    print("Wimbledon Champions: ")
+    for name, win_counts in count_of_champions.items():
+        print(name, win_counts)
+    print(f'\nThese {len(win_countries)} countries have won Wimbledon:')
+    print(','.join(win_country for win_country in sorted(win_countries)))
 
 
 def extract_details(filename):

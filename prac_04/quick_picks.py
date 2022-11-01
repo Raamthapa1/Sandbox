@@ -1,8 +1,8 @@
 import random
 
-NUM_IN_LINES = 6
+NUM_IN_LINES = 7
 MIN_NUMBER = 1
-MAX_NUMBER = 45
+MAX_NUMBER = 35
 
 valid = False
 while not valid:

@@ -1,5 +1,6 @@
 """Menu"""
 MENU = """
+
 (H)ello
 (G)oodbye
 (Q)uit
@@ -20,4 +21,6 @@ while choice != "Q":
         print('Invalid choice')
         print(MENU)
         choice = input(">>> ").upper()
+
 print('Finished.')
+

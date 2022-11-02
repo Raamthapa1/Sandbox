@@ -1,6 +1,6 @@
 """Menu"""
 MENU = """
-H - Hello
+(H) - Hello
 (G)oodbye
 (Q)uit
 """

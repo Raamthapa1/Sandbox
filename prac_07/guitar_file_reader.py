@@ -33,6 +33,12 @@ def main():
     guitars = load_file(CSV_FILE)
     for guitar in guitars:
         print(guitar)
+        # sort bt year
+    guitars.sort()
+    print()
+    print("Sort by year")
+    for guitar in guitars:
+        print(guitar)
 
 
 if __name__ == '__main__':

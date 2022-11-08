@@ -9,3 +9,8 @@ class Guitar:
         """Return string representation of a guitar."""
         return f'{self.name}, Made in  {self.year}, ${self.cost}'
 
+    def __lt__(self, other):
+        """sort guitar by year"""
+        return self.year < other.year
+
+

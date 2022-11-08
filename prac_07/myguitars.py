@@ -6,7 +6,7 @@ CSV_FILE = "guitars.csv"
 
 def load_file(csv_file):
     """Read file of  guitar details and return a list of guitar."""
-    guitars = []
+    guitars = [ ]
     # Open the file for reading
     in_file = open(CSV_FILE, 'r')
 
@@ -19,7 +19,7 @@ def load_file(csv_file):
 
         # construct a guitar object
         # year should be an int, cost should be a float
-        guitar = Guitar(parts[0], int(parts[1]), float(parts[2]))
+        guitar = Guitar(parts[ 0 ], int(parts[ 1 ]), float(parts[ 2 ]))
 
         # Add the guitar to the list
         guitars.append(guitar)
@@ -107,6 +107,7 @@ def main():
         print(guitar)
 
     save_guitars(CSV_FILE, guitars)
+
 
 if __name__ == '__main__':
     main()

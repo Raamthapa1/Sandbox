@@ -2,9 +2,18 @@ from project import Project
 
 # constants
 PROJECT_FILE = 'projects.txt'
+MENU = """Menu:
+(L)oad projects
+(S)ave projects 
+(D)isplay projects
+(F)ilter projects by date
+(A)dd new project 
+(U)pdate project
+(Q)uit"""
 
 
-def load_project(project_file):
+def load_project():
+    project_file = 'projects.txt'
     """Read file project details, return a list of project"""
     projects = []
     # Open the file for reading
@@ -35,9 +44,35 @@ def load_project(project_file):
 
 
 def main():
-    projects = load_project(PROJECT_FILE)
-    for project in projects:
-        print(project)
+    print(MENU)
+    choice = input(">>> ").strip().upper()
+    while choice != "Q":
+        if choice == "L":
+            pass
+        elif choice == "S":
+            pass
+        elif choice == "D":
+            projects = load_project()
+            print("Incomplete project: ")
+            for project in projects:
+                if not project.is_complete():
+                    print(project)
+            print("Completed projects: ")
+            for project in projects:
+                if project.is_complete():
+                    print(project)
+        elif choice == "F":
+            pass
+        elif choice == "A":
+            pass
+        elif choice == "U":
+            pass
+
+        else:
+            print('Invalid menu choice')
+        print(MENU)
+        choice = input(">>> ").strip().upper()
+    print("byee")
 
 
 if __name__ == '__main__':

@@ -13,11 +13,10 @@ class Project:
         return f'{self.name}, start: {self.start_date}, priority {self.priority}, estimate: ${self.estimate:.2f}' \
                f', completion: {self.completion}%'
 
-
-def main():
-    project = Project('Build Car Park', '12/09/2021', 2, 600000.0, 95)
-    print(project)
+    def is_complete(self):
+        return self.completion > 99
 
 
-if __name__ == '__main__':
-    main()
+
+
+

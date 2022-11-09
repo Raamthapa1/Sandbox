@@ -16,6 +16,9 @@ class Project:
     def is_complete(self):
         return self.completion > 99
 
+    def update(self, new_percentage):
+        self.completion = new_percentage
+
 
 
 

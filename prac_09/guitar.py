@@ -3,9 +3,13 @@ CP1404/CP5632 Practical - Suggested Solution
 Guitar class
 """
 # Note: It would be better to get the current year from the system clock
-# and you might like to do that: lookup the "datetime" module
-CURRENT_YEAR = 2022
+# and you might like to do that: lookup the "datetime" module # DONE
+import datetime
+
+
+CURRENT_YEAR = datetime.datetime.now().year
 VINTAGE_AGE = 50
+
 
 
 class Guitar:
@@ -36,3 +40,5 @@ class Guitar:
     def __lt__(self, other):
         """Less than, used for sorting Guitars - by year released."""
         return self.year < other.year
+
+

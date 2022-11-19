@@ -1,4 +1,5 @@
-# Weekly pracs for CP1404 Prac_07
+
+# Weekly pracs for CP1404 Prac
 ## Ram Thapa
 Good codng skills learned from this subject:
 - No repetation

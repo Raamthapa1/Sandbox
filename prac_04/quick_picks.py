@@ -12,7 +12,7 @@ while not valid:
     except ValueError:
         print("Its not a number, Please input a proper number")
 for i in range(quick_pick_number):
-    quick_pick = []
+    quick_pick = [ ]
     for j in range(NUM_IN_LINES):
         unique_number = random.randint(MIN_NUMBER, MAX_NUMBER)
         while unique_number in quick_pick:
@@ -21,3 +21,8 @@ for i in range(quick_pick_number):
         quick_pick.sort()
 
     print(" ".join("{:2}".format(unique_number) for unique_number in quick_pick))
+
+for i in range(9):
+    print(random.randint(1, 20), end=' ')
+print()
+

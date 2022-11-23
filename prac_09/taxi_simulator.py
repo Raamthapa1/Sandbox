@@ -6,6 +6,7 @@ MENU = "q)uit, c)hoose taxi, d)rive"
 
 
 def main():
+    """Prints menu and takes user input """
     print("Let's drive!")
     print(MENU)
     menu_choice = input(">>> ").lower()

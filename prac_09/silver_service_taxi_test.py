@@ -2,7 +2,7 @@ from silver_service_taxi import SilverServiceTaxi
 
 
 def main():
-    """New object my taxi"""
+    """New object my_taxi"""
     my_taxi = SilverServiceTaxi("Hummer", 200, 4)
     print(my_taxi)
     test_taxi = SilverServiceTaxi("Hyundai", 200, 2)

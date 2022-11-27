@@ -1,4 +1,4 @@
-
+"""Band class"""
 class Band:
     """Band class to comply with requirements """
 
